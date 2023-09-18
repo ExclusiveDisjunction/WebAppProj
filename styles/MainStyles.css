@@ -1,0 +1,63 @@
+body
+{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#HeaderLinks a 
+{
+    float: left;
+    display: block;
+    text-align:  center;
+    padding: 9px 15px;
+    text-decoration: none;
+    
+    /* todo
+    color: ;
+    font-size: ;
+    */
+}
+
+h1
+{
+    font-family: sans-serif;
+    font-size: 53px;
+    padding: 4px;
+    margin: 2px;
+}
+h2, h3, h4, h5
+{
+    font-family: sans-serif;
+    padding: 4px;
+    margin: 2px;
+}
+
+header, footer
+{
+    display: block;
+    width: 100%;
+    margin: 0;
+    border: #000000 10px;
+}
+header p, footer p
+{
+    padding: 4px 8px;
+}
+
+#MainSection
+{
+    clear: both;
+    display: grid;
+    grid-template:  1fr 1fr;
+    grid-gap: 15px;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 20px;
+}
+.MainSectionItem
+{
+    border-bottom: 5px solid #000000;
+    padding: 10px 20px;
+    display: grid;
+    border-radius: 5px;
+    width: auto;
+}
