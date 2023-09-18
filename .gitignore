@@ -4,6 +4,8 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 
+*.pem
+*.ppk
 
 # Logs
 logs
