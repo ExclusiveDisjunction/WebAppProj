@@ -4,7 +4,7 @@ body
 {
     margin: 0;
     font-family: sans-serif;
-    background: linear-gradient(0.25turn, #D7C69A, #F0CE78);
+    background: gray; /*linear-gradient(0.25turn, #D7C69A, #F0CE78);*/
 }
 
 #HeaderLinks
@@ -29,14 +29,18 @@ body
 
 h1
 {
-    font-family: sans-serif;
+    font-family: Tourney, sans-serif;
+
+    background: -webkit-linear-gradient(35deg, #A093C7, #87BFCF, #A8D7C2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 53px;
     padding: 4px;
     margin: 2px;
 }
 h2, h3, h4, h5
 {
-    font-family: sans-serif;
+    font-family: "Croissant One", sans-serif;
     padding: 4px;
     margin: 2px;
 }
