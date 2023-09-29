@@ -48,18 +48,27 @@ h2, h3, h4, h5
 
 header, footer
 {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 8%;
-    margin: 0;
     border: #000000 10px;
 }
 header p, footer p
 {
     padding: 4px 8px;
     color: #495057;
+}
+
+#HeaderLinks
+{
+    text-align: center;
+    position: relative;
+}
+#HeaderLinks a
+{
+    float: left;
+    padding: 14px 16px;
 }
 
 #MainSection
