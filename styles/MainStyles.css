@@ -10,40 +10,40 @@ body
 #HeaderLinks
 {
     overflow: hidden;
-    /*font-family: ;*/
+    text-align: center;
 }
+
 #HeaderLinks a 
 {
-    float: left;
-    display: block;
+    float: center;
+    color: #495057;
     text-align:  center;
-    padding: 16px 16px;
-    padding: 9px 15px;
+    padding: 1px 1px;
     text-decoration: none;
-    
-    /* todo
-    color: ;
-    font-size: ;
-    */
+    font-size: 15px
 }
 
 h1
 {
     font-family: Tourney, sans-serif;
-
     background: -webkit-linear-gradient(35deg, #A093C7, #87BFCF, #A8D7C2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 53px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    font-size: 55px;
     padding: 4px;
     margin: 2px;
 }
+
 h2, h3, h4, h5
 {
     font-family: "Croissant One", sans-serif;
     color: #495057;
     padding: 4px;
     margin: 2px;
+    text-align: center;
 }
 
 header, footer
@@ -52,23 +52,14 @@ header, footer
     align-items: center;
     justify-content: center;
     width: 100%;
-    border: #000000 10px;
+    border: #495057 10px;
 }
+
 header p, footer p
 {
     padding: 4px 8px;
     color: #495057;
-}
-
-#HeaderLinks
-{
     text-align: center;
-    position: relative;
-}
-#HeaderLinks a
-{
-    float: left;
-    padding: 14px 16px;
 }
 
 #MainSection
@@ -87,4 +78,5 @@ header p, footer p
     display: grid;
     border-radius: 5px;
     width: auto;
+
 }
