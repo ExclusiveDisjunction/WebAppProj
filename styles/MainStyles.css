@@ -4,7 +4,7 @@ body
 {
     margin: 0;
     font-family: sans-serif;
-    background: gray; /*linear-gradient(0.25turn, #D7C69A, #F0CE78);*/
+    background: #ECF0F1    ; /*linear-gradient(0.25turn, #D7C69A, #F0CE78);*/
 }
 
 #HeaderLinks
@@ -41,6 +41,7 @@ h1
 h2, h3, h4, h5
 {
     font-family: "Croissant One", sans-serif;
+    color: #495057;
     padding: 4px;
     margin: 2px;
 }
@@ -58,6 +59,7 @@ header, footer
 header p, footer p
 {
     padding: 4px 8px;
+    color: #495057;
 }
 
 #MainSection
@@ -71,7 +73,7 @@ header p, footer p
 }
 .MainSectionItem
 {
-    border-bottom: 5px solid #000000;
+    border-bottom: 5px solid #495057;
     padding: 10px 20px;
     display: grid;
     border-radius: 5px;
