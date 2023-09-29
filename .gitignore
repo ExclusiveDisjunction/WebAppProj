@@ -6,7 +6,6 @@
 
 *.pem
 *.ppk
-*.map
 
 # Logs
 logs
