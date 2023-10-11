@@ -3,6 +3,7 @@
 #include <time.h>
 #include <fstream>
 #include <filesystem>
+#include <vector>
 
 #ifdef __linux__
 #include <unistd.h>
@@ -21,12 +22,13 @@ int main()
     char* cwd;
     size_t cwd_size;
     #ifdef __linux__
-    cwd_size = PATH_MAX;
-    cwd = getcwd(cwd, cwd_size);
+    cwd_size = PATH_MAX;    
     #elif defined(_WIN32) || defined(_WIN64) || defined(__MINGW32__)
     cwd_size = MAX_PATH;
-    cwd = _getcwd(cwd, cwd_size);
     #endif
+
+    cwd = new char[cwd_size];
+    cwd = getcwd(cwd, cwd_size);
 
     if (cwd != nullptr)
         cout << "The current working directory is \"" << cwd << "\"" << endl;
@@ -36,25 +38,22 @@ int main()
         return 1;
     }
 
-    string SitemapPath;
-    cout << "Please enter the path of the sitemap: ";
-    getline(cin, SitemapPath);
-
-    cout << endl;
-
-    string Url, DateStr;
+    filesystem::path SitemapPath;
+    vector<string> Urls;
+    string DateStr;
 
     //Determine the Url from the url.txt file.
     {
         filesystem::path CurrentPath(cwd);
-        filesystem::path ActiveDirectoryName = CurrentPath.filename();
+        if (CurrentPath.filename() == "siteman")
+            CurrentPath = CurrentPath.parent_path();
         filesystem::path UrlDestFile;
-        if (ActiveDirectoryName != "siteman")
-            UrlDestFile = CurrentPath / "siteman/url.txt";
-        else
-            UrlDestFile = CurrentPath / "url.txt";
 
-        cout << "Finding url file at " << UrlDestFile << endl;
+        UrlDestFile = CurrentPath / "siteman/url.txt";   
+        SitemapPath = CurrentPath / "sitemap.xml";
+
+        cout << "Finding url file at " << UrlDestFile << endl << 
+                "Finding Sitemap file at " << SitemapPath << endl;
         ifstream UrlPath(UrlDestFile);
         if (!UrlPath)
         {
@@ -62,8 +61,14 @@ int main()
             return 1; 
         }
 
-        getline(UrlPath, Url);
-        Url += "index.html";
+        string Url;
+
+        while (!UrlPath.eof())
+        {
+            getline(UrlPath, Url);
+            cout << "URL for website found to be " << Url << endl;
+            Urls.push_back(Url);
+        }
         UrlPath.close();
     }
 
@@ -82,14 +87,18 @@ int main()
     }
 
     OutFile <<  "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" << endl << 
-                "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">" << endl << 
-                "\t<url>" << endl <<
+                "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">" << endl;
+    for (string& Url : Urls)
+    {
+        OutFile << "\t<url>" << endl <<
                 "\t\t<loc>" << Url << "</loc>" << endl << 
                 "\t\t<lastmod>" << DateStr << "</lastmod>" << endl <<
-                "\t</url>" << endl <<
-                "</urlset>" << endl;
+                "\t</url>" << endl;
+    }
+                
+    OutFile << "</urlset>" << endl;
 
-    cout << "The file has been updated to have url \"" << Url << "\" and timestamp " << DateStr << "." << endl;
+    cout << "The sitemap url's have been updated, and their timestap set to " << DateStr << "." << endl;
     OutFile.close();
 
     return 0;
