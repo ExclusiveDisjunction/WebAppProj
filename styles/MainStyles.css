@@ -7,25 +7,25 @@ body
     background: #ECF0F1    ; /*linear-gradient(0.25turn, #D7C69A, #F0CE78);*/
     margin-top: 50px;
 }
+
+/* Fundamental Styles */
 a
 {
     color: black;
 }
 p
 {
-    font-family: 'Croissant One', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 h1
 {
     font-family: Tourney, sans-serif;
     background: -webkit-linear-gradient(35deg, #A093C7, #87BFCF, #A8D7C2);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    font-size: 6em;
-    margin: 0px;
+    text-align: center;
+    font-size: 7em;
     padding-top: 12px;
 }
 h2, h3, h4, h5
@@ -34,7 +34,19 @@ h2, h3, h4, h5
     color: #495057;
     margin: 0px;
     text-align: center;
-    font-size: 30px;
+    font-size: 2.5em;
+}
+h3
+{
+    font-size: 2.2em;
+}
+h4
+{
+    font-size: 1.7em;
+}
+h5
+{
+    font-size: 1.5em;
 }
 
 header, footer
@@ -47,19 +59,28 @@ header, footer
     border: #495057 1px;
     background-color: #D4D8DA;
 }
+footer
+{
+    background-color: #3B3561;
+    color: white;
+}
 
 header p, footer p
 {
     padding: 2px;
     color: #495057;
     text-align: center;
-
+}
+footer p
+{
+    color: white;
 }
 
 .navbar
 {
-    background-color: #a8986f;
+    background-color: #3B3561; /*#294C60;*/
     border-bottom: 2px solid black;
+    color: white;
 }
 .navbar-nav
 {
@@ -71,24 +92,17 @@ header p, footer p
     font-size: 1.5rem;
     background: -webkit-linear-gradient(35deg, #A093C7, #87BFCF, #A8D7C2);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-#MainSection
+.nav-link
 {
-    clear: both;
-    display: grid;
-    grid-template:  1fr 1fr;
-    grid-gap: 15px;
-    grid-auto-rows: minmax(100px, auto);
-    margin: 20px;
+    color: white;
 }
+
 .MainSectionItem
 {
-    border-bottom: 5px solid #495057;
-    padding: 10px 0px;
-    display: grid;
+    padding: 20px;
     border-radius: 5px;
-    width: auto;
-
+    width: 100%;
 }
