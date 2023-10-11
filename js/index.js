@@ -1,16 +1,16 @@
 var request = new XMLHttpRequest();
-request.open('GET', 'http://glitterglides.com/header.html', true);
+request.open('GET', 'http://glitterglides.com/header.xml', true);
 request.responseType = 'blob';
 request.onload = function()
 {
     var reader = new FileReader();
-    reader.readAsDataURL(request.response);
+    reader.readAsText(request.response);
     reader.onload = function(e)
     {
         console.log('DataURL:', e.target.result);
         
         const template = document.createElement('template');
-        template.innerHTML = fr.readAsText(e.target.result);
+        template.innerHTML = e.target.result;
         Header = document.getElementsByTagName("header");
         if (Header.length != 1)
         {
@@ -21,4 +21,11 @@ request.onload = function()
     }
 }
 
-request.send();
+try
+{
+    request.send();
+}
+catch (excpt)
+{
+    alert('Error with request sending occured.');
+}
