@@ -90,10 +90,10 @@ int main()
                 "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">" << endl;
     for (string& Url : Urls)
     {
-        OutFile << "\t<url>" << endl <<
-                "\t\t<loc>" << Url << "</loc>" << endl << 
-                "\t\t<lastmod>" << DateStr << "</lastmod>" << endl <<
-                "\t</url>" << endl;
+        OutFile <<  "\t<url>" << endl <<
+                    "\t\t<loc>" << Url << "</loc>" << endl << 
+                    "\t\t<lastmod>" << DateStr << "</lastmod>" << endl <<
+                    "\t</url>" << endl;
     }
                 
     OutFile << "</urlset>" << endl;
