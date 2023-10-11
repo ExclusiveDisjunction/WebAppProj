@@ -4,15 +4,31 @@
 #include <fstream>
 #include <filesystem>
 
+#ifdef __linux__
 #include <unistd.h>
+#elif defined(_WIN32) || defined(_WIN64) || defined(__MINGW32__)
+#define WIN32_LEAN_AND_MEAN
+#include <windows.h>
+#include <direct.h>
+#endif
+
 #include <limits.h>
 
 using namespace std;
 
 int main()
 {
-    char cwd[PATH_MAX];
-    if (getcwd(cwd, sizeof(cwd)) != nullptr)
+    char* cwd;
+    size_t cwd_size;
+    #ifdef __linux__
+    cwd_size = PATH_MAX;
+    cwd = getcwd(cwd, cwd_size);
+    #elif defined(_WIN32) || defined(_WIN64) || defined(__MINGW32__)
+    cwd_size = MAX_PATH;
+    cwd = _getcwd(cwd, cwd_size);
+    #endif
+
+    if (cwd != nullptr)
         cout << "The current working directory is \"" << cwd << "\"" << endl;
     else
     {
