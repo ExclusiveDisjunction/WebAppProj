@@ -33,8 +33,8 @@ int main()
         filesystem::path CurrentPath(cwd);
         filesystem::path ActiveDirectoryName = CurrentPath.filename();
         filesystem::path UrlDestFile;
-        if (ActiveDirectoryName != "SitemapUpdate")
-            UrlDestFile = CurrentPath / "SitemapUpdate/url.txt";
+        if (ActiveDirectoryName != "siteman")
+            UrlDestFile = CurrentPath / "siteman/url.txt";
         else
             UrlDestFile = CurrentPath / "url.txt";
 
@@ -42,7 +42,7 @@ int main()
         ifstream UrlPath(UrlDestFile);
         if (!UrlPath)
         {
-            cout << "Error with reading url file, please check that SitemapUpdate/url.txt exists." << endl;
+            cout << "Error with reading url file, please check that siteman/url.txt exists." << endl;
             return 1; 
         }
 
