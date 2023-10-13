@@ -2,25 +2,29 @@
 
 body
 {
+    --background: #ECF0F1;
+    --accent1: #a093c7;
+    --accent2: #c98891;
+    --accent3: #a8d7c2;
+    --accent4: #d7c69a;
+    --accent5: #87bfcf;
+    --text_color: #000000;
+
     margin: 0;
-    font-family: sans-serif;
-    background: #ECF0F1    ; /*linear-gradient(0.25turn, #D7C69A, #F0CE78);*/
+    font-family: 'Lato' sans-serif;
+    background: var(--background);
     margin-top: 50px;
 }
 
 /* Fundamental Styles */
 a
 {
-    color: black;
-}
-p
-{
-    font-family: 'Lato', sans-serif;
+    color: var(--text_color);
 }
 h1
 {
-    font-family: Tourney, sans-serif;
-    background: -webkit-linear-gradient(35deg, #A093C7, #87BFCF, #A8D7C2);
+    font-family: Tourney, sans-serif;   
+    background: -webkit-linear-gradient(35deg, #A093C7, #87BFCF, #A8D7C2);    
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -30,23 +34,23 @@ h1
 }
 h2, h3, h4, h5
 {
-    font-family: 'Croissant One', sans-serif;
+    font-family: 'Saira Extra Condensed', sans-serif;
     color: #495057;
     margin: 0px;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2.2rem;
 }
 h3
 {
-    font-size: 2.2em;
+    font-size: 1.9rem;
 }
 h4
 {
-    font-size: 1.7em;
+    font-size: 1.3rem;
 }
 h5
 {
-    font-size: 1.5em;
+    font-size: 1.0rem;
 }
 
 header, footer
