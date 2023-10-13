@@ -23,13 +23,8 @@ a
 }
 h1
 {
-<<<<<<< HEAD
-    font-family: Tourney, sans-serif;   
-    background: -webkit-linear-gradient(35deg, #A093C7, #87BFCF, #A8D7C2);    
-=======
     font-family: Tourney, sans-serif;
     background: -webkit-linear-gradient(35deg,  #87BFCF, #A6C8E3, #A8D7C2);
->>>>>>> 8fadf85fe4d1cf21223a153768eb948cad68452b
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
