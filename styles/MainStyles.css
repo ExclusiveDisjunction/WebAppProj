@@ -23,8 +23,13 @@ a
 }
 h1
 {
+<<<<<<< HEAD
     font-family: Tourney, sans-serif;   
     background: -webkit-linear-gradient(35deg, #A093C7, #87BFCF, #A8D7C2);    
+=======
+    font-family: Tourney, sans-serif;
+    background: -webkit-linear-gradient(35deg,  #87BFCF, #A6C8E3, #A8D7C2);
+>>>>>>> 8fadf85fe4d1cf21223a153768eb948cad68452b
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -60,12 +65,12 @@ header, footer
     justify-content: center;
     width: 100%;
     margin: 0;
-    border: #495057 1px;
-    background-color: #D4D8DA;
+    border: #4d85bd 1px;
+    background-color: #f1f0ff;
 }
 footer
 {
-    background-color: #3B3561;
+    background-color: #565297;
     color: white;
 }
 
@@ -82,7 +87,7 @@ footer p
 
 .navbar
 {
-    background-color: #3B3561; /*#294C60;*/
+    background-color: #565297; /*#294C60;*/
     border-bottom: 2px solid black;
     color: white;
 }
@@ -93,8 +98,8 @@ footer p
 .navbar-brand
 {
     font-family: Tourney, sans-serif;
-    font-size: 1.5rem;
-    background: -webkit-linear-gradient(35deg, #A093C7, #87BFCF, #A8D7C2);
+    font-size: 1.75rem;
+    background: -webkit-linear-gradient(35deg,  #87BFCF, #A6C8E3, #A8D7C2);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
