@@ -3,7 +3,37 @@ ul
     list-style-type: none;
 }
 
+body
+{
+    width: 100%;
+}
+
+input[type="text"], input[type="password"]
+{
+    width: 100%;
+}
+input[type="submit"], input[type="reset"]
+{
+    min-width: 40px;
+    width: 100%;
+    /*
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    */
+}
+
+#FormData
+{
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background: transparent;
+    border: 0px solid transparent;
+}
+
 #Hero
 {
     text-align: center;
+    padding: 20px;
 }

@@ -67,21 +67,21 @@
             </div>
         </div>
 
-        <div id="FormHost">
-            <div class="row">
-                <div class="col align-self-center">
+        <div id="FormHost" class="row">
+            <div class="col d-flex justify-content-center" style="padding-bottom: 20px;">
+                <div id="FormData" class="card align-self-center">
                     <p for="firstName">First Name</p>
-                    <input id="firstName" type="text"></input>
-                    <p>Last Name</p>
-                    <input id="firstName" type="text"></input>
-                    <p>Phone Number</p>
-                    <input id="firstName" type="text"></input>
-                    <p>Email</p>
-                    <input id="firstName" type="text"></input>
-                    <p>Password</p>
-                    <input id="password" type="password"></input>
+                    <input id="firstName" type="text" name="firstName"></input>
+                    <p for="lastName">Last Name</p>
+                    <input id="lastName" type="text" name="lastName"></input>
+                    <p for="phoneNumber">Phone Number</p>
+                    <input id="phoneNumber" type="text" name="phoneNumber"></input>
+                    <p for="email">Email</p>
+                    <input id="email" type="text" name="email"></input>
+                    <p for="password">Password</p>
+                    <input id="password" type="password" name="password"></input>
                     <p for="subStatus">Subscription Status</p>
-                    <ul>
+                    <ul id="subStatus">
                         <li>
                             <input type="radio" name="subStatus">Basic Glitter</input>
                         </li>
@@ -93,8 +93,14 @@
                         </li>
                     </ul>
 
-                    <input type="submit"></input>   
-                    <input type="reset"></input> 
+                    <div class="row">
+                        <div class="col d-flex align-content-stretch text-center">
+                            <input type="submit" class="text-center"></input>   
+                        </div>
+                        <div class="col d-flex align-content-stretch">
+                            <input type="reset" class="text-center"></input> 
+                        </div>
+                    </div>  
                 </div>
             </div>
         </div>
