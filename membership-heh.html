@@ -70,7 +70,9 @@
         <div id="FormHost" class="row">
             <div class="col d-flex justify-content-center" style="padding-bottom: 20px;">
                 <div id="FormData" class="card align-self-center">
-                    <h3>
+                    <div id="errorOutput" class="hidden-elem">
+                    </div>
+
                     <p for="firstName">First Name</p>
                     <input id="firstName" type="text" name="firstName"></input>
                     <p for="lastName">Last Name</p>
@@ -82,8 +84,6 @@
                     <p for="password">Password</p>
                     <input id="password" type="password" name="password"></input>
                     <p for="subStatus">Subscription Status</p>
-                    </h3>
-                    <h4>
                     <ul id="subStatus">
                         <li>
                             <input type="radio" name="subStatus" checked="true">Basic Glitter</input>
@@ -95,7 +95,7 @@
                             <input type="radio" name="subStatus">Blinding Lumosity</input>
                         </li>
                     </ul>
-                    </h4>
+
                     <div class="row">
                         <div class="col d-flex align-content-stretch text-center">
                             <input id="submitForm" type="submit" class="text-center"></input>   
