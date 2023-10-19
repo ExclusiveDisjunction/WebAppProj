@@ -1,6 +1,7 @@
 ul
 {
     list-style-type: none;
+    padding-left: 0px;
 }
 
 body
@@ -35,5 +36,91 @@ input[type="submit"], input[type="reset"]
 #Hero
 {
     text-align: center;
-    padding: 20px;
+    padding-top: 20px;
 }
+
+p{
+    margin: 0px;
+    margin-top: 10px;
+}
+
+li{
+    margin: 10px;
+}
+
+
+input.text-center {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    background-color: white;
+    border: 2px solid #D7C69A;
+    border-bottom: 
+    color: #495057;
+    font-size: 1.5rem;
+    padding: 3px;
+}
+
+
+input.text-center:hover {
+    background-color: #A093C7;
+    border: 2px solid #E0E09D;
+    color: white;
+
+}
+
+
+h2 {
+    font-size: 3.0rem;
+    font-weight: bold;
+}
+
+h5 {
+   font-size: 1.45rem;
+}
+
+h3 {
+   font-size: 1.75rem;
+   text-align: left;
+}
+
+
+h4 {
+   font-size: 1.45rem;
+   text-align: left;
+}
+
+section
+{
+   display: block;
+   align-items: center;
+   margin-top: 1rem;
+   margin-left: 2px;
+}
+
+input[type="radio"] { 
+   appearance: none; 
+   -webkit-appearance: none;
+   border: 0.2rem solid #D7C69A;
+   background-color: #D7C69A;
+   border-radius: 50%;
+   padding: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
