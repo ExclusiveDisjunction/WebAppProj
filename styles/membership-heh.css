@@ -37,7 +37,7 @@ section
    margin-left: 2px;
 }
 
-input[type="text"], input[type="password"], input[type="tel"]
+input[type="text"], input[type="password"], input[type="tel"], select
 {
     width: 100%;
 
@@ -48,10 +48,18 @@ input[type="text"], input[type="password"], input[type="tel"]
     color: #495057;
     padding: 3px;
 }
+select
+{
+    margin-bottom: 10px;
+}
 input[type="submit"], input[type="reset"]
 {
     min-width: 40px;
     width: 100%;
+    border: 2px solid #a093c7;
+    border-radius: 3px;
+    background-color: #a093c7;
+    color: white;
 }
 input.text-center:hover 
 {

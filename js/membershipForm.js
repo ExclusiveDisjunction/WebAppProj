@@ -1,9 +1,31 @@
+function setbBackground(e)
+{
+    if (e.type == "focus")   
+    {
+        e.target.style.borderColor = "#a093c7";
+    }
+    else if (e.type == "blur")
+    {
+        e.target.style.borderColor = "#D7C69A";
+    }
+}
 
 document.addEventListener("DOMContentLoaded", function()
 {
     const resetBttn = document.getElementById("resetForm");
     const submitBttn = document.getElementById("submitForm");
     
+    {
+        const cssSelector = "input[type=text],input[type=password],input[type=tel],select";
+        const fields = document.querySelectorAll(cssSelector);
+
+        for (let field of fields)
+        {
+            field.addEventListener("focus", setbBackground);
+            field.addEventListener("blur", setbBackground);
+        }
+    }
+
     document.getElementById("FormData").addEventListener("submit", function(e)
     {
         const cssSelector = "input[type=text],input[type=password],input[type=tel]";
