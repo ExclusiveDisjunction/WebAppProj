@@ -2,5 +2,6 @@ Sitemap: http://glitterglides.com/sitemap.xml
 
 User-agent: *
 Disallow: /dooped.html
-Disallow: /membership-heh.html
+Disallow: /membership-hcs.html
+Disallow: /membership.html
 Disallow: /thankyou.html
