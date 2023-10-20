@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function()
     {
         resetBttn.addEventListener("click", function()
         {
-            const cssSelector = "input[type=text],input[type=password]";
+            const cssSelector = "input[type=text],input[type=password],input[type=tel]";
             const fields = document.querySelectorAll(cssSelector);
 
             for (let field of fields)
