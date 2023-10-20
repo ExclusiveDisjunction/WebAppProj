@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function()
     const submitBttn = document.getElementById("submitForm");
     const resetBttn = document.getElementById("resetForm");
 
+    const form = document.forms["FormData"];
+
     const firstName = document.getElementById("firstName");
     const lastName = document.getElementById("lastName");
     const phoneNumber = document.getElementById("phoneNumber");
@@ -43,9 +45,9 @@ document.addEventListener("DOMContentLoaded", function()
         }
     }
 
-    if (submitBttn)
+    if (form)
     {
-        submitBttn.addEventListener("click", function()
+        form.addEventListener("onSubmit", function()
         {
             resetErrorStyles();
 
@@ -168,8 +170,8 @@ document.addEventListener("DOMContentLoaded", function()
                     let SpeCharFound = false;
                     for (let passChar of passwordVal)
                     {
-                        passChar.toLowerCase();
-                        if (compareString.includes( passChar))
+                        passChar = passChar.toLowerCase();
+                        if (compareString.includes(passChar))
                         {
                             //really do nothing
                         }
@@ -215,6 +217,18 @@ document.addEventListener("DOMContentLoaded", function()
             else
             {
                 //TODO: Write query string & other fun crap.
+                const Parameters = new URLSearchParams(
+                {
+                    FirstName: firstName.value,
+                    LastName: lastName.value,
+                    PhoneNumber: phoneNumber.value,
+                    Email: email.value,
+                    Password: password.value,
+                    Subscription: subscription,
+                });
+
+                const NewURL = window.location.pathname + "/" + Parameters.toString();
+                window.location.pathname = NewURL;
             }
         });
     }
