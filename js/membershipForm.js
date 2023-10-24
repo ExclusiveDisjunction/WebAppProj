@@ -57,12 +57,12 @@ document.addEventListener("DOMContentLoaded", function()
         let errorFields = [];
 
         if (firstName.value == "")
-            errorFields.push(new errorPair(firstName, "First name cannot be left blank."));
+            errorFields.push(new errorPair(firstName, "<h4>First name cannot be left blank.</h4>"));
         else
             firstName.value = capitalizeEachWord(firstName.value);
         
         if (lastName.value == "")
-            errorFields.push(new errorPair(lastName, "Last name cannot be left blank."));
+            errorFields.push(new errorPair(lastName, "<h4>Last name cannot be left blank.</h4>"));
         else
             lastName.value = capitalizeEachWord(lastName.value);
 
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function()
             {
                 case 10:
                     if (errorChar(phoneNumberVal))
-                        errorFields.push(new errorPair(phoneNumber, "The phone number can only contain numbers."));
+                        errorFields.push(new errorPair(phoneNumber, "<h4>The phone number can only contain numbers.</h4>"));
 
                     //No cases were found so phone number is valid.
                     break;
@@ -93,19 +93,19 @@ document.addEventListener("DOMContentLoaded", function()
                     const firstElem = splits.length != 3 ? null : splits[0];
                     const longFormat = phoneNumberVal.length == 14 ? true : false;
                     if (splits.length != 3)
-                        errorFields.push(new errorPair(phoneNumber), "The phone number cannot contain more than 2 \'-\'.");
+                        errorFields.push(new errorPair(phoneNumber), "<h4>The phone number cannot contain more than 2 \'-\'.</h4>");
                     else if ((longFormat ? 
                                     firstElem.length != 5 || (firstElem[0] != '(' && firstElem[firstElem.length-1] != ')') :
                                     firstElem.length != 3)
                                 || splits[1].length != 3 
                                 || splits[2].length != 4)
-                        errorFields.push(new errorPair(phoneNumber, "The phone number is not of valid format."));
+                        errorFields.push(new errorPair(phoneNumber, "<h4>The phone number is not of valid format.</h4>"));
                     else
                     {
                         for (let item in splits)
                         {
                             if (errorChar(item))
-                                errorFields.add(new errorPair(phoneNumber), "The phone number can only contain numbers.");
+                                errorFields.add(new errorPair(phoneNumber), "<h4>The phone number can only contain numbers.</h4>");
                         }
                     }
 
@@ -114,9 +114,9 @@ document.addEventListener("DOMContentLoaded", function()
                     break;
                 }
                 case 0:
-                    errorFields.push(new errorPair(phoneNumber, "The phone number cannot be blank."));
+                    errorFields.push(new errorPair(phoneNumber, "<h4>The phone number cannot be blank.</h4>"));
                 default:
-                    errorFields.push(new errorPair(phoneNumber, "The phone number must be either ##########, ###-###-####, (###)-###-####."));
+                    errorFields.push(new errorPair(phoneNumber, "<h4>The phone number must be either ##########, ###-###-####, (###)-###-####.</h4>"));
                     break;
             }
         }
@@ -128,9 +128,9 @@ document.addEventListener("DOMContentLoaded", function()
             const splitByPeriod = emailVal.split(".");
 
             if (emailVal.length == 0)
-                errorFields.push(new errorPair(email, "The email cannot be left blank."));
+                errorFields.push(new errorPair(email, "<h4>The email cannot be left blank.</h4>"));
             else if (splitByAt.length != 2 || splitByPeriod.length != 2)
-                errorFields.push(new errorPair(email, "The email address provided was not valid."));
+                errorFields.push(new errorPair(email, "<h4>The email address provided was not valid.</h4>"));
             else
             {
                 //First check to see if there is at minimum 1 char before and after the @
@@ -141,9 +141,9 @@ document.addEventListener("DOMContentLoaded", function()
                 splitByPeriod[1].trim();
 
                 if (splitByAt[0].length < 1 || (splitByAt[1].length < 1 && splitByAt[1][0] != '.'))
-                    errorFields.push(new errorPair(email, "The email must have at least one character before and after the \'@\'."));
+                    errorFields.push(new errorPair(email, "<h4>The email must have at least one character before and after the \'@\'.</h4>"));
                 else if ((splitByPeriod[0].length < 1 && splitByPeriod[0][0] != '@') || splitByPeriod[1].length < 2)
-                    errorFields.push(new errorPair(email, "The email must have at least one character before the \'.\' and two characters after it."));
+                    errorFields.push(new errorPair(email, "<h4>The email must have at least one character before the \'.\' and two characters after it.</h4>"));
             }
 
             //The email is considered to be valid.
@@ -155,9 +155,9 @@ document.addEventListener("DOMContentLoaded", function()
             const passwordVal = password.value;
             passwordVal.trim();
             if (passwordVal.length < 6)
-                errorFields.push(new errorPair(password, "The password must have at least 6 characters, including a number and a letter."));
+                errorFields.push(new errorPair(password, "<h4>The password must have at least 6 characters, including a number and a letter.</h4>"));
             else if (passwordVal.length > 9)
-                errorFields.push(new errorPair(password, "The password cannot contain more than 9 characters."));
+                errorFields.push(new errorPair(password, "<h4>The password cannot contain more than 9 characters.</h4>"));
             else
             {
                 const compareString = "abcdefghijklmnopqrstuvwxyz"
@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", function()
                 }
 
                 if (!NumFound && !SpeCharFound)
-                    errorFields.push(new errorPair(password, "The password must contain either a number or a special character."));
+                    errorFields.push(new errorPair(password, "<h4>The password must contain either a number or a special character.</h4>"));
             }
 
             //Since the password was trimmed it needs to be reset.
@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", function()
 
         if (errorFields.length > 0)
         {
-            let ErrorMessage = "<h2>Please Correct the following issues:</h2>\n";
+            let ErrorMessage = "<h2>Please correct the following issues:</h2>\n";
             for (let error of errorFields)
             {
                 e.preventDefault();
