@@ -32,7 +32,7 @@ h1
     -webkit-text-fill-color: transparent;
     text-align: center;
     font-size: 7em;
-    padding-top: 12px;
+    padding-top: 50px;
 
 
 }
@@ -40,7 +40,7 @@ h2, h3, h4, h5
 {
     font-family: 'Saira Extra Condensed', sans-serif;
     color: #495057;
-    margin: 0px;
+    margin: 20px;
     text-align: center;
     font-size: 2.2rem;
 }
@@ -54,7 +54,7 @@ h4
 }
 h5
 {
-    font-size: 1.0rem;
+    font-size: 1.45rem;
 }
 
 header, footer
@@ -79,19 +79,28 @@ header p, footer p
     text-align: center;
 }
 footer p
-{
+{  
+    font-family: 'Saira Extra Condensed', sans-serif;
     color: white;
+    font-size: 1.1rem;
 }
 
 .navbar
 {
     background-color: #565297; /*#294C60;*/
-    border-bottom: 2px solid black;
-    color: white;
+    border-bottom: 3px solid #495057;
 }
+
 .navbar-nav
 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 1.45rem;
     margin: 5px;
+}
+
+.navbar-nav:hover
+{
+    background-color: #A093C7;
 }
 .navbar-brand
 {
@@ -109,8 +118,8 @@ footer p
 
 .MainSectionItem
 {
-    padding: 20px;
-    border-radius: 5px;
     width: 100%;
-    background: #00000001;
+    background: #00000000;
+    border: 3px solid #00000000;
+
 }

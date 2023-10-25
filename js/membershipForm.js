@@ -2,11 +2,11 @@ function setbBackground(e)
 {
     if (e.type == "focus")   
     {
-        e.target.style.borderColor = "#a093c7";
+        e.target.style.borderColor = "white"; //#E6DAB0
     }
     else if (e.type == "blur")
     {
-        e.target.style.borderColor = "#D7C69A";
+        e.target.style.borderColor = "#E6DAB0";
     }
 }
 
