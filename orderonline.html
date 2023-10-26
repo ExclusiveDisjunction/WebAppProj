@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="styles/bootstrap-4.4.1.css">
         <link rel="stylesheet" href="styles/MainStyles.css"/>
         <link rel="stylesheet" href="styles/SubPageStyles.css"/>
+        <link rel="stylesheet" href="styles/orderonline.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +16,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Lato&family=Saira+Extra+Condensed&family=Tourney:ital,wght@0,300;0,500;1,500&display=swap" rel="stylesheet">
     </head>
     <body>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+   		<script src="js/bootstrap-4.4.1.js"></script>
+        <script src="js/orderonline.js"></script>
+
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
                 <a href="http://glitterglides.com">
@@ -53,9 +59,66 @@
                 </div>
             </nav>
 
+            <input type="button" value="Clear Cart" id="ResetCart"></input>
         </header>
 
-        <p>Ooga Booga</p>
+        <!-- For the cards, the JS will change the style of the cards to have a border once the user presses the Add To Cart button. please use the template seen in the "All Items" section. -->
+
+        <div class="row">
+            <div class="col sectional">
+                <h2><strong class="red-emphasis">Hot</strong> New Items</h2>
+                <div class="row">
+                    <div class="col card">
+                        <img class="card-img-top text-center mx-auto" src="" alt=""/>
+                        <h3>Glitter Boots</h3>
+                        <div class="card-body">
+                            <p>Some text about boots</p>
+                            <p>for the record if I had to wear the same shoes all day I would like to not have them be boots.</p>
+                        </div>
+
+                        <input type="button" class="addToCartBttn" value="Add To Cart"></input>
+                    </div>
+                    <div class="col card">
+                        <img class="card-img-top text-center mx-auto" src="" alt=""/>
+                        <h3>Glitter Heels</h3>
+                        <div class="card-body">
+                            <p>Crush the men down like the boss bitch you are</p>
+                        </div>
+
+                        <input type="button" class="addToCartBttn" value="Add To Cart"></input>
+                    </div>
+                    <div class="col card">
+                        <img class="card-img-top text-center mx-auto" src="" alt=""/>
+                        <h3>Glitter Slides</h3>
+                        <div class="card-body">
+                            <p>Slides are goofy</p>
+                            <p>Like dont get me wrong but they seem like they keep falling off</p>
+                        </div>
+
+                        <input type="button" class="addToCartBttn" value="Add To Cart"></input>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col sectional">
+                <h2>All Items</h2>
+
+                <div class="row">
+                    <div class="col card">
+                        <img class="card-img-top text-center mx-auto" src="" alt=""/>
+                        <h3></h3>
+                        <div class="card-body">
+                            
+                        </div>
+
+                        <input type="button" class="addToCartBttn" value="Add To Cart"></input>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
 
         <footer>
             <p><strong>&copy Glitter Glides 2023</strong></p>
