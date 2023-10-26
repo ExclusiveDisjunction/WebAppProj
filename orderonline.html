@@ -59,10 +59,23 @@
                 </div>
             </nav>
 
+            <!-- This button has a linked event to clear all styles. -->
             <input type="button" value="Clear Cart" id="ResetCart"></input>
         </header>
 
-        <!-- For the cards, the JS will change the style of the cards to have a border once the user presses the Add To Cart button. please use the template seen in the "All Items" section. -->
+        <!-- For the cards, the JS will change the style of the cards to have a border once the user presses the Add To Cart button.
+             Here is the template. Please note that the js will look for the button, the h3 tag, and the card tag when events are called.
+
+                <div class="col card">
+                    <img class="card-img-top text-center mx-auto" src="" alt=""/>
+                    <h3></h3>
+                    <div class="card-body">
+                        
+                    </div>
+
+                    <input type="button" class="addToCartBttn" value="Add To Cart"></input>
+                </div>       
+        -->
 
         <div class="row">
             <div class="col sectional">
@@ -114,8 +127,7 @@
                         </div>
 
                         <input type="button" class="addToCartBttn" value="Add To Cart"></input>
-                    </div>
-                    
+                    </div>                    
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 .sectional
 {
-    margin: 3rem;
+    margin: 25px;
     width: 100%;
     background: #00000000;
     border: 3px solid #00000000;
@@ -11,9 +11,9 @@
 }
 .card
 {
-    margin: 1.5rem;
-    padding: 1rem;
-    max-width: 35rem;
+    margin: 10px;
+    padding: 20px;
+    min-width: 20rem;
 }
 
 .red-emphasis

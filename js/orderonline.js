@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function()
                 });
         }
     }
+    //Updates the style of the cards that match the Name parameter, by grabbing the value of the h3 in each card. When InCart is true, it will remove styles, while if it is false, it will add the styles.
     function selectAllCardsOfName(Name, InCart)
     {
         const FilteredCards = Array.from(CartCards).filter( a =>
@@ -35,16 +36,17 @@ document.addEventListener('DOMContentLoaded', function()
                 if (InCart)
                 {
                     Card.classList.remove("OrderSelect");
-                    SubmitButton.value = "Add To Cart";
+                    SubmitButton.setAttribute('value', "Add To Cart");
                 }
                 else
                 {
                     Card.classList.add("OrderSelect");
-                    SubmitButton.Value = "Remove From Cart";
+                    SubmitButton.setAttribute('value', "Remove From Cart");
                 }
             }
         }
     }
+    // Occurs when a "Add To Cart" button is pressed. This will either add or remove that item from carItems, and then style each of the matching cards by calling selectAllCardsOfName(). Then it updates the storage.
     function toggleCartItem(e)
     {
         const Target = e.target;
@@ -70,14 +72,17 @@ document.addEventListener('DOMContentLoaded', function()
         updateStorage();
     }
 
+    // Updates the sessionStorage for this webpage to the current cart items.
     function updateStorage()
     {
         sessionStorage.setItem('cartitems', JSON.stringify(cartItems));
     }
+    // Grabs the sessionStorage data.
     function retrieveStorage()
     {
         return JSON.parse(sessionStorage.getItem('cartitems')) || [];
     }
+    // Clears all data & resets styles.
     function removeStorage()
     {
         sessionStorage.removeItem('cartitems');
@@ -85,19 +90,20 @@ document.addEventListener('DOMContentLoaded', function()
         resetCardStyles();
     }
 
+    // Links the reset cart button to remove the storage.
     const ResetCart = document.querySelector("#ResetCart");
     ResetCart.addEventListener("click", removeStorage);
 
+    // Links the buttons for addtocart to the event that will select all matching cards.
     for (let e of AddToCartBttns)
     {
         e.addEventListener('click', toggleCartItem);
     }
 
+    // Sets up basic document & data.
+    // Grabs the data from the sessionStorage, and then updates each card that is already in cartItems to be styled correctly.
+
     cartItems = retrieveStorage();
-    console.log(cartItems);
-    resetCardStyles();
     for (let cartItem of cartItems)
-    {
         selectAllCardsOfName(cartItem, false);
-    }
 });
