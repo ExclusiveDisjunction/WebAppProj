@@ -1,0 +1,34 @@
+.sectional
+{
+    margin: 25px;
+    width: 100%;
+    background: #00000000;
+    border: 3px solid #00000000;
+}
+.subsectional
+{
+    width: 100%;
+}
+.card
+{
+    margin: 10px;
+    padding: 20px;
+    min-width: 20rem;
+}
+
+.red-emphasis
+{
+    color: red;
+}
+
+.addToCartBttn
+{
+    max-width: 20rem;
+    align-self: center;
+}
+
+/* This is the style that the JS will apply to the card when the item is in the cart.*/
+.OrderSelect
+{
+    border: 3px blue solid;
+}
