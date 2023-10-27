@@ -102,15 +102,22 @@ footer p
 {
     background-color: #A093C7;
 }
+/* Since the navbar is now an image this style is mostly redudant. */
 .navbar-brand
 {
+    text-align: center;
+    align-self: center;
+    height: 60px;
+
+/*
     font-family: Tourney, sans-serif;
     font-size: 1.75rem;
     background: -webkit-linear-gradient(35deg,  #87BFCF, #A6C8E3, #A8D7C2);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+*/
+} 
 .nav-link
 {
     color: white;
