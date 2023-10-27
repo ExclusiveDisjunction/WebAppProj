@@ -72,17 +72,26 @@ footer
     color: white;
 }
 
-header p, footer p
+header p
 {
     padding: 2px;
     color: #495057;
     text-align: center;
 }
-footer p
+footer p, footer a
 {  
+    text-align: center;
     font-family: 'Saira Extra Condensed', sans-serif;
     color: white;
     font-size: 1.1rem;
+    margin-bottom: 3px;
+    padding: 2px;
+}
+footer a:hover
+{
+    color: lightgray;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .navbar
@@ -129,4 +138,10 @@ footer p
     background: #00000000;
     border: 3px solid #00000000;
 
+}
+
+.socialLogo
+{
+    height: 25px;
+    align-self: center;
 }
