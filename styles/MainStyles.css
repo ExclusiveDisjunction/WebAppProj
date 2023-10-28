@@ -1,9 +1,8 @@
 /* https://coolors.co/a093c7-c98891-a8d7c2-d7c69a-87bfcf */
 
 body
-{
-    background: -webkit-linear-gradient(35deg, #A093C7, #87BFCF, #A8D7C2);    
-/*
+{ 
+
     --background: #ECF0F1;
     --accent1: #a093c7;
     --accent2: #c98891;
@@ -11,11 +10,11 @@ body
     --accent4: #d7c69a;
     --accent5: #87bfcf;
     --text_color: #000000;
-*/
+
     margin: 0;
     font-family: 'Lato' sans-serif;
-    /*background: var(--background);*/
-    margin-top: 50px;
+    background: -webkit-linear-gradient(35deg, var(--accent1), var(--accent5), var(--accent3));   
+    margin-top: 70px;
 }
 
 /* Fundamental Styles */
@@ -31,10 +30,8 @@ h1
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    font-size: 7em;
+    font-size: 5.5rem;
     padding-top: 50px;
-
-
 }
 h2, h3, h4, h5
 {
@@ -62,7 +59,6 @@ header, footer
     display: block;
     align-items: center;
     justify-content: center;
-    width: 100%;
     margin: 0;
     border: #4d85bd 1px;
 }
@@ -72,30 +68,41 @@ footer
     color: white;
 }
 
-header p, footer p
+header p
 {
     padding: 2px;
     color: #495057;
     text-align: center;
 }
-footer p
+footer p, footer a
 {  
+    text-align: center;
     font-family: 'Saira Extra Condensed', sans-serif;
     color: white;
     font-size: 1.1rem;
+    margin-bottom: 3px;
+    padding: 2px;
+}
+footer a:hover
+{
+    color: lightgray;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .navbar
 {
     background-color: #565297; /*#294C60;*/
     border-bottom: 3px solid #495057;
+    width: 100%;
+    
 }
 
 .navbar-nav
 {
     font-family: 'Saira Extra Condensed', sans-serif;
     font-size: 1.45rem;
-    margin: 5px;
+    margin: 0px;
 }
 
 .navbar-nav:hover
@@ -123,10 +130,54 @@ footer p
     color: white;
 }
 
+.SpacedRow
+{
+    padding-bottom: 10px;
+    margin: 15px;
+    margin-bottom: 10px;
+}
 .MainSectionItem
 {
-    width: 100%;
-    background: #00000000;
+    display: block;
+    background: #00000010;
     border: 3px solid #00000000;
+    border-radius: 10px;
+}
+.SubSectionItem
+{
+    width: 98%;
+    background: #00000000;
+    margin: 2%;
+    border: #00000000 solid 0;
+}
+.SocialMediaGroup
+{
+    display: block;
+    margin: 10px;
+    padding: 10px;
 
+    text-align: center;
+    background-color: #00000007;
+    border-radius: 10px;
+    border: 2px var(--accent3) solid;
+
+    min-width: 15rem;
+}
+.SocialMediaGroup h4
+{
+    font-size: 1.75rem;
+}
+.SMGroupLogo
+{
+    width: 7rem;
+    align-self: center;
+    justify-self: center;
+    border: 3px var(--accent4) solid;
+    border-radius: 20px;
+}
+
+.socialLogo
+{
+    height: 25px;
+    align-self: center;
 }
