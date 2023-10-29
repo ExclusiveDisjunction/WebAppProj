@@ -16,6 +16,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Lato&family=Saira+Extra+Condensed&family=Tourney:ital,wght@0,300;0,500;1,500&display=swap" rel="stylesheet">
     </head>
     <body>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+   		<script src="js/bootstrap-4.4.1.js"></script>
+
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
                 <a href="http://glitterglides.com">
@@ -42,18 +46,15 @@
                         </li>
                     </ul>
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="http://glitterglides.com/about.html" style="color: white;">About</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="http://glitterglides.com/membership.html" style="color: white;">Subscribe</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="http://glitterglides.com/blog.html" style="color: white;">Blog & Reviews</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-lnk dropdown-toggle" href="#" id="navbarDropdownMenuLink" style="color: white;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About & Other
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="nav-link" href="http://glitterglides.com/about.html" style="color: white;">About</a>
+                                <a class="nav-link" href="http://glitterglides.com/membership.html" style="color: white;">Subscribe</a>
+                                <a class="nav-link" href="http://glitterglides.com/blog.html" style="color: white;">Blog & Reviews</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -65,74 +66,75 @@
 		        <div class="col card">
              	        <h1>About Glitter Glides</h1>
 	                <div class="card-body">
-        	        <div style="text-align: center;">
-                    <p>Welcome to Glitter Glides, where fashion meets innovation, and comfort sparkles at every step. We aren't just a shoe company; we're trendsetters in the realm of footwear, bringing you the future of style with our revolutionary spray-on shoes.</p>
-                	</div>
+                        <div style="text-align: center;">
+                            <p>Welcome to Glitter Glides, where fashion meets innovation, and comfort sparkles at every step. We aren't just a shoe company; we're trendsetters in the realm of footwear, bringing you the future of style with our revolutionary spray-on shoes.</p>
+                        </div>
 	                </div>
-          	        </div>
+                </div>
  		    </div>
 		</div>
-                <div class="row">
-                    <div class="col card">
-                        <img class="card-img-top text-center mx-auto" src="" alt=""/>
-                        <h2>Our Sparkling Journey</h2>
-                    </div>
-                    <div class="col card">
-                        <p>At Glitter Glides, we believe that fashion should be as dynamic as life itself. That's why we embarked on a journey to redefine the way you experience footwear. Our story begins with a simple yet audacious idea: What if you could literally spray on your shoes?</p>
-                    </div>
+            <div class="row">
+                <div class="col card">
+                    <img class="card-img-top text-center mx-auto" src="" alt=""/>
+                    <h2>Our Sparkling Journey</h2>
                 </div>
-
-                <div class="row">
-                    <div class="col card">
-                        <p>Enter Glitter Glides, the pioneers of spray-on shoes. Our cutting-edge technology allows you to customize your footwear experience like never before. Say goodbye to traditional shoe shopping, and hello to a world where your style is as unique as you are.</p>
-                    </div>
-                    <div class="col card">
-                        <img class="card-img-top text-center mx-auto" src="" alt=""/>
-                        <h2>Innovation at Your Feet</h2>
-                        </div>
-                    </div>
-
-                <div class="row">
-                    <div class="col card">
-                        <img class="card-img-top text-center mx-auto" src="" alt=""/>
-                        <h2>How it Works</h2>
-                    </div>
-                    <div class="col card">
-                        <p>Our proprietary spray-on formula seamlessly molds to your feet, creating a snug and comfortable fit. Choose from an array of vibrant colors and dazzling glitters to express your personality. Whether you're strolling through the city streets or dancing the night away, Glitter Glides are designed to keep up with your every move.</p>
-                    </div>
+                <div class="col card">
+                    <p>At Glitter Glides, we believe that fashion should be as dynamic as life itself. That's why we embarked on a journey to redefine the way you experience footwear. Our story begins with a simple yet audacious idea: What if you could literally spray on your shoes?</p>
                 </div>
+            </div>
 
-                <div class="row">
-                    <div class="col card">
-                        <p>We are committed to not only shaping the future of fashion but doing so responsibly. Glitter Glides are eco-friendly, using materials that are both sustainable and recyclable. Join us on our mission to stride towards a greener, more glittering future.</p>
-                    </div>
-                    <div class="col card">
-                        <img class="card-img-top text-center mx-auto" src="" alt=""/>
-                        <h2>Sustianable Style</h2>
-                        </div>
-                    </div>
-
-                <div class="row">
-                    <div class="col card">
-                        <img class="card-img-top text-center mx-auto" src="" alt=""/>
-                        <h2>Glitter Glides Community</h2>
-                    </div>
-                    <div class="col card">
-                        <p>Glitter Glides isn't just a brand; it's a community of fashion-forward individuals who dare to step into the extraordinary. Connect with us on social media, share your unique Glitter Glides style, and be part of a movement that celebrates individuality and innovation.</p>
-                    </div>
+            <div class="row">
+                <div class="col card">
+                    <p>Enter Glitter Glides, the pioneers of spray-on shoes. Our cutting-edge technology allows you to customize your footwear experience like never before. Say goodbye to traditional shoe shopping, and hello to a world where your style is as unique as you are.</p>
                 </div>
+                <div class="col card">
+                    <img class="card-img-top text-center mx-auto" src="" alt=""/>
+                    <h2>Innovation at Your Feet</h2>
+                </div>
+            </div>
 
-                <div class="row">
-                    <div class="col card">
-                        <p>Are you ready to step into a world where fashion knows no bounds? Join us on this sparkling journey and experience the magic of Glitter Glides. Your style, your way, with a touch of glitter at every step.
+            <div class="row">
+                <div class="col card">
+                    <img class="card-img-top text-center mx-auto" src="" alt=""/>
+                    <h2>How it Works</h2>
+                </div>
+                <div class="col card">
+                    <p>Our proprietary spray-on formula seamlessly molds to your feet, creating a snug and comfortable fit. Choose from an array of vibrant colors and dazzling glitters to express your personality. Whether you're strolling through the city streets or dancing the night away, Glitter Glides are designed to keep up with your every move.</p>
+                </div>
+            </div>
 
-Dare to dazzle. Dare to glide.</p>
-                    </div>
-                    <div class="col card">
-                        <img class="card-img-top text-center mx-auto" src="" alt=""/>
-                        <h2>Step into the Future</h2>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col card">
+                    <p>We are committed to not only shaping the future of fashion but doing so responsibly. Glitter Glides are eco-friendly, using materials that are both sustainable and recyclable. Join us on our mission to stride towards a greener, more glittering future.</p>
+                </div>
+                <div class="col card">
+                    <img class="card-img-top text-center mx-auto" src="" alt=""/>
+                    <h2>Sustianable Style</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col card">
+                    <img class="card-img-top text-center mx-auto" src="" alt=""/>
+                    <h2>Glitter Glides Community</h2>
+                </div>
+                <div class="col card">
+                    <p>Glitter Glides isn't just a brand; it's a community of fashion-forward individuals who dare to step into the extraordinary. Connect with us on social media, share your unique Glitter Glides style, and be part of a movement that celebrates individuality and innovation.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col card">
+                    <p>Are you ready to step into a world where fashion knows no bounds? Join us on this sparkling journey and experience the magic of Glitter Glides. Your style, your way, with a touch of glitter at every step.</p>
+
+                    <p>Dare to dazzle. Dare to glide.</p>
+                </div>
+                <div class="col card">
+                    <img class="card-img-top text-center mx-auto" src="" alt=""/>
+                    <h2>Step into the Future</h2>
+                </div>
+            </div>
+        </div>
 
         <footer>            
             <p>
