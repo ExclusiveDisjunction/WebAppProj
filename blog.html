@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Glitter Glides - Order Online</title>
+        <title>Glitter Glides - Blog & Reviews</title>
 
         <link rel="stylesheet" href="styles/bootstrap-4.4.1.css">
         <link rel="stylesheet" href="styles/MainStyles.css"/>
@@ -29,13 +29,16 @@
                   "@type": "AggregateRating",
                   "ratingValue": 5,
                   "bestRating": 5,
-                  "worstRating": 1,
-                  "reviewCount": 1
+                  "worstRating": 4,
+                  "reviewCount": 3
                 },
                 "review": [
                     {
                         "@type": "Review",
-                        "author": "ShoeEnthusiast22",
+                        "author": {
+                            "@type": "ShoeEnthusiast22",
+                            "name": "Anynomomus"
+                        }
                         "reviewRating":{
                             "@type": "Rating",
                             "ratingValue": 5
@@ -45,7 +48,10 @@
                     },
                     {
                         "@type": "Review",
-                        "author": "Anynomomus",
+                        "author": {
+                            "@type": "Person",
+                            "name": "Anynomomus"
+                        },
                         "reviewRating":{
                             "@type": "Rating",
                             "ratingValue": 4
@@ -59,7 +65,10 @@
                     },
                     {
                         "@type": "Review",
-                        "author": "ShoeFinder35",
+                        "author": {
+                            "@type": "ShoeFinder35",
+                            "name": "Anynomomus"
+                        }
                         "reviewRating":{
                             "@type": "Rating",
                             "ratingValue": 5
@@ -79,10 +88,14 @@
         </script>
     </head>
     <body>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+   		<script src="js/bootstrap-4.4.1.js"></script>
+
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
                 <a href="http://glitterglides.com">
-                    <img class="navbar-brand" src="img/glitterglideslogo.png"></img>
+                    <img class="navbar-brand" src="img/glitterglideslogo.png"  alt="Glitter Glides Logo"></img>
                 </a>                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Naviation">
                     <span class="navbar-toggler-icon"></span>
@@ -105,23 +118,22 @@
                         </li>
                     </ul>
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="http://glitterglides.com/about.html" style="color: white;">About</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="http://glitterglides.com/membership.html" style="color: white;">Subscribe</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="http://glitterglides.com/blog.html" style="color: white;">Blog & Reviews</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-lnk dropdown-toggle" href="#" id="navbarDropdownMenuLink" style="color: white;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About & Other
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="nav-link" href="http://glitterglides.com/about.html" style="color: white;">About</a>
+                                <a class="nav-link" href="http://glitterglides.com/membership.html" style="color: white;">Subscribe</a>
+                                <a class="nav-link" href="http://glitterglides.com/blog.html" style="color: white;">Blog & Reviews</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </nav>
 
+            <h1>Blog & Reviews</h1>
+            <p>Come find out why everyone wants a pair!</p>
         </header>
 
         <div class="row SpacedRow">

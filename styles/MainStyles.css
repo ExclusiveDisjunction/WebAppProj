@@ -97,37 +97,64 @@ footer a:hover
     width: 100%;
     
 }
-
 .navbar-nav
 {
     font-family: 'Saira Extra Condensed', sans-serif;
     font-size: 1.45rem;
     margin: 0px;
 }
-
+.dropdown-menu
+{
+    background: #00000080;
+    border: solid 1px var(--accent3);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.dropdown-menu a
+{
+    font-size: 1.25rem;
+    padding-left: 10px !important;
+    padding-right: 5px !important;
+}
 .navbar-nav:hover
 {
     background-color: #A093C7;
 }
-/* Since the navbar is now an image this style is mostly redudant. */
 .navbar-brand
 {
     text-align: center;
     align-self: center;
     height: 60px;
-
-/*
-    font-family: Tourney, sans-serif;
-    font-size: 1.75rem;
-    background: -webkit-linear-gradient(35deg,  #87BFCF, #A6C8E3, #A8D7C2);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-*/
 } 
 .nav-link
 {
     color: white;
+}
+.nav-item
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.CallToAction
+{
+    text-align: center;
+    border: var(--accent1) 4px solid;
+    background: transparent;
+    width: auto;
+    display:inline;
+    position: relative;
+    font-size: 1.15rem;
+    margin: 10px auto auto;
+    padding: 15px;
+    vertical-align: middle;
+    letter-spacing: 1px;
+}
+.CallToAction:hover
+{
+    color: white;
+    background: var(--accent1);
+    border: var(--accent4) 4px solid;
 }
 
 .SpacedRow
@@ -175,9 +202,23 @@ footer a:hover
     border: 3px var(--accent4) solid;
     border-radius: 20px;
 }
-
+.SocialMediaGroup a
+{
+    border-bottom: 1px solid var(--accent4);
+}
+.SocialMediaGroup a:hover
+{
+    color: var(--accent4);
+}
 .socialLogo
 {
     height: 25px;
     align-self: center;
+}
+
+.OrderOnlineCard
+{
+    margin: 10px;
+    padding: 20px;
+    min-width: 20rem;
 }

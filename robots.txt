@@ -1,7 +1,15 @@
-Sitemap: http://glitterglides.com/sitemap.xml
-
 User-agent: *
+Allow: /
+Allow: https://tumblr.com/glitterglides
+Allow: https://independent.academia.edu/GlitterGlides
+Allow: https://www.instagram.com/glitterglides/
+Allow: http://www.glitterglides.com/
 Disallow: /dooped.html
 Disallow: /membership-hcs.html
 Disallow: /membership.html
-Disallow: /thankyou.html
+Disallow: /siteman
+Disallow: /Guides
+Disallow: /Final Project Instructions.pdf
+Disallow: /google7b57b949504fadcd.html
+
+Sitemap: http://glitterglides.com/sitemap.xml
