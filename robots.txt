@@ -1,5 +1,9 @@
 User-agent: *
 Allow: /
+Allow: https://tumblr.com/glitterglides
+Allow: https://independent.academia.edu/GlitterGlides
+Allow: https://www.instagram.com/glitterglides/
+Allow: http://www.glitterglides.com/
 Disallow: /dooped.html
 Disallow: /membership-hcs.html
 Disallow: /membership.html
