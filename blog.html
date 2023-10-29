@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,7 +35,10 @@
                 "review": [
                     {
                         "@type": "Review",
-                        "author": "ShoeEnthusiast22",
+                        "author": {
+                            "@type": "ShoeEnthusiast22",
+                            "name": "Anynomomus"
+                        }
                         "reviewRating":{
                             "@type": "Rating",
                             "ratingValue": 5
@@ -45,7 +48,10 @@
                     },
                     {
                         "@type": "Review",
-                        "author": "Anynomomus",
+                        "author": {
+                            "@type": "Person",
+                            "name": "Anynomomus"
+                        },
                         "reviewRating":{
                             "@type": "Rating",
                             "ratingValue": 4
@@ -59,7 +65,10 @@
                     },
                     {
                         "@type": "Review",
-                        "author": "ShoeFinder35",
+                        "author": {
+                            "@type": "ShoeFinder35",
+                            "name": "Anynomomus"
+                        }
                         "reviewRating":{
                             "@type": "Rating",
                             "ratingValue": 5
@@ -86,7 +95,7 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
                 <a href="http://glitterglides.com">
-                    <img class="navbar-brand" src="img/glitterglideslogo.png"></img>
+                    <img class="navbar-brand" src="img/glitterglideslogo.png"  alt="Glitter Glides Logo"></img>
                 </a>                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Naviation">
                     <span class="navbar-toggler-icon"></span>
@@ -123,6 +132,8 @@
                 </div>
             </nav>
 
+            <h1>Blog & Reviews</h1>
+            <p>Come find out why everyone wants a pair!</p>
         </header>
 
         <div class="row SpacedRow">
