@@ -5,3 +5,7 @@ Disallow: /dooped.html
 Disallow: /membership-hcs.html
 Disallow: /membership.html
 Disallow: /thankyou.html
+Allow: /about.html
+Allow: /blog.html
+Allow: /index.html
+Allow: /orderonline.html
