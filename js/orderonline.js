@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', function()
             CartCards.forEach( e => 
                 {
                     e.classList.remove("OrderSelect")
+                    const SubmitButton = e.querySelector(".addToCartBttn");
+                    SubmitButton.setAttribute('value', "Add To Cart");
                 });
         }
     }

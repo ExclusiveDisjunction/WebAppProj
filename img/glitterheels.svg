@@ -20,11 +20,11 @@
        id="linearGradient5"
        inkscape:collect="always">
       <stop
-         style="stop-color:#00ff2d;stop-opacity:1;"
+         style="stop-color:#d7c69a;stop-opacity:1;"
          offset="0"
          id="stop5" />
       <stop
-         style="stop-color:#00ffe1;stop-opacity:1;"
+         style="stop-color:#c98891;stop-opacity:1;"
          offset="1"
          id="stop6" />
     </linearGradient>
@@ -74,10 +74,10 @@
        inkscape:collect="always"
        xlink:href="#linearGradient5"
        id="linearGradient6"
-       x1="-1.9155407"
-       y1="618.71965"
-       x2="1241.2704"
-       y2="618.71965"
+       x1="88.114868"
+       y1="2.9001952e-05"
+       x2="965.43256"
+       y2="660.86157"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
@@ -90,12 +90,12 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      inkscape:zoom="0.52204582"
-     inkscape:cx="714.49666"
-     inkscape:cy="759.51187"
-     inkscape:window-width="1920"
-     inkscape:window-height="1141"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:cx="714.49667"
+     inkscape:cy="759.51188"
+     inkscape:window-width="2256"
+     inkscape:window-height="1398"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
      inkscape:window-maximized="1"
      inkscape:current-layer="g1" />
   <g

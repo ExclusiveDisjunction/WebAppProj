@@ -30,5 +30,5 @@
 /* This is the style that the JS will apply to the card when the item is in the cart.*/
 .OrderSelect
 {
-    border: 3px blue solid;
+    border: 3px var(--accent4) solid;
 }

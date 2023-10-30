@@ -7,7 +7,7 @@
    width="878.40002"
    height="454.72"
    viewBox="0 0 878.40002 454.72"
-   sodipodi:docname="AdobeStock_616610589.svg"
+   sodipodi:docname="glitterglides.svg"
    inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -20,11 +20,15 @@
        id="linearGradient11"
        inkscape:collect="always">
       <stop
-         style="stop-color:#00ff51;stop-opacity:1;"
+         style="stop-color:#c98891;stop-opacity:1;"
          offset="0"
          id="stop11" />
       <stop
-         style="stop-color:#00fffd;stop-opacity:1;"
+         style="stop-color:#b48dac;stop-opacity:1;"
+         offset="0.46891657"
+         id="stop1" />
+      <stop
+         style="stop-color:#87bfcf;stop-opacity:1;"
          offset="1"
          id="stop12" />
     </linearGradient>
@@ -124,10 +128,10 @@
        inkscape:collect="always"
        xlink:href="#linearGradient11"
        id="linearGradient12"
-       x1="0"
-       y1="227.22249"
-       x2="878.40002"
-       y2="227.22249"
+       x1="788.46637"
+       y1="67.065254"
+       x2="-32.237591"
+       y2="254.94202"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
@@ -139,13 +143,13 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
-     inkscape:zoom="0.68875226"
-     inkscape:cx="541.55902"
-     inkscape:cy="455.17092"
-     inkscape:window-width="1920"
-     inkscape:window-height="1171"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:zoom="0.97404279"
+     inkscape:cx="493.81814"
+     inkscape:cy="265.38875"
+     inkscape:window-width="2256"
+     inkscape:window-height="1398"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
      inkscape:window-maximized="1"
      inkscape:current-layer="g1" />
   <g
@@ -160,7 +164,7 @@
        id="image1"
        style="display:none" />
     <rect
-       style="opacity:1;fill:url(#linearGradient12);fill-opacity:1"
+       style="opacity:1;fill:url(#linearGradient12);fill-opacity:1;stroke:none"
        id="rect11"
        width="878.40002"
        height="454.44498"
