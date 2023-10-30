@@ -1,0 +1,24 @@
+p
+{
+    font-size: 1.45rem;
+    color: white;
+}
+
+.SpacedRow
+{
+    height: auto;
+}
+
+.MainSectionItem a
+{
+    border: 3px solid var(--accent4);
+    border-radius: 5px;
+    padding: 7px;
+    background-color: transparent;
+    margin: 5px;
+}
+.MainSectionItem a:hover
+{
+    background-color: var(--accent4);
+    color: white;
+}

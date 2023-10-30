@@ -16,6 +16,29 @@
     min-width: 20rem;
 }
 
+#ResetCart, #SubmitCart
+{
+    padding: 7px;
+    font-size: 1.10rem;
+    background-color: transparent;
+    border: 3px solid red;
+    border-radius: 5px;
+}
+#SubmitCart
+{
+    border-color: var(--accent4);
+}
+#ResetCart:hover, #SubmitCart:hover
+{
+    color: white;
+    background-color: red;
+}
+#SubmitCart:hover
+{
+    text-decoration: none;
+    background-color: var(--accent4);
+}
+
 .red-emphasis
 {
     color: red;

@@ -94,7 +94,14 @@ document.addEventListener('DOMContentLoaded', function()
 
     // Links the reset cart button to remove the storage.
     const ResetCart = document.querySelector("#ResetCart");
+    const SubmitCart = document.querySelector("#SubmitCart");
     ResetCart.addEventListener("click", removeStorage);
+    SubmitCart.addEventListener("click", function() 
+    {
+        removeStorage();
+
+        window.location.href = "http://glitterglides.com/dooped.html";
+    });
 
     // Links the buttons for addtocart to the event that will select all matching cards.
     for (let e of AddToCartBttns)
