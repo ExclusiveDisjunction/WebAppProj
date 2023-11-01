@@ -1,0 +1,46 @@
+#SocialCharms
+{
+    float: right;
+    height: auto;
+    text-align: none;
+    margin: 3px;
+}
+
+.SocialMediaGroup
+{
+    display: block;
+    margin: 10px;
+    padding: 10px;
+
+    text-align: center;
+    background-color: #00000007;
+    border-radius: 10px;
+    border: 2px var(--accent3) solid;
+
+    min-width: 15rem;
+}
+.SocialMediaGroup h4
+{
+    font-size: 1.75rem;
+}
+.SMGroupLogo
+{
+    width: 7rem;
+    align-self: center;
+    justify-self: center;
+    border: 3px var(--accent4) solid;
+    border-radius: 20px;
+}
+.SocialMediaGroup a
+{
+    border-bottom: 1px solid var(--accent4);
+}
+.SocialMediaGroup a:hover
+{
+    color: var(--accent4);
+}
+.socialLogo
+{
+    height: 25px;
+    align-self: center;
+}
