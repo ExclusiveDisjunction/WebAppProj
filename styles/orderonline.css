@@ -16,6 +16,13 @@
     min-width: 20rem;
 }
 
+#commandsTray
+{
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+}
+
 #ResetCart, #SubmitCart
 {
     padding: 7px;

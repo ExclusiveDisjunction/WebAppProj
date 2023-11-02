@@ -4,13 +4,13 @@
     padding: 20px;
     min-width: 20rem;
 
-    background: #00000023;
+    background: #00000010;
     border: transparent;
 
 }
 .OrderOnlineCard:hover
 {
-    background: #00000033;
+    background: #00000020;
 }
 .OrderOnlineCard img
 {

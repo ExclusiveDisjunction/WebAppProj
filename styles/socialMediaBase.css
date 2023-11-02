@@ -6,18 +6,41 @@
     margin: 3px;
 }
 
-.SocialMediaGroup
+#SocialMediaGrid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content;
+    max-width: 18rem;
+    align-self: center;
+    margin: auto;
+}
+.SocialGrid-2x2
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    margin: auto;
+}
+
+.socialDescCard
 {
     display: block;
     margin: 10px;
     padding: 10px;
-
-    text-align: center;
     background-color: #00000007;
     border-radius: 10px;
     border: 2px var(--accent3) solid;
-
-    min-width: 15rem;
+}
+.SocialMediaGroup
+{
+    margin: 0px;
+    padding: 0px;
+    background: transparent;
+    text-align: center;
+    min-width: 12rem;
+    border: 0px transparent solid;
 }
 .SocialMediaGroup h4
 {
@@ -25,11 +48,11 @@
 }
 .SMGroupLogo
 {
-    width: 7rem;
+    width: 4rem;
     align-self: center;
     justify-self: center;
-    border: 3px var(--accent4) solid;
-    border-radius: 20px;
+    padding-bottom: 3px;
+    border-radius: 10px;
 }
 .SocialMediaGroup a
 {

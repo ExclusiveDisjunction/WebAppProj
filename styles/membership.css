@@ -1,12 +1,10 @@
 body
 {
     width: 100%;
-    margin-top: 100px;
 }
 #FormHost p
 {
     margin: 0px;
-    margin-top: 20px;
     text-shadow: 2px 2px 4px #A093C7;
 
 }
@@ -123,7 +121,7 @@ input[type="radio"] {
 }
 .hidden-elem
 {
-    visibility: hidden;
+    visibility: collapse;
 }
 #errorOutput
 {
@@ -143,7 +141,7 @@ input[type="radio"] {
     font-size: 1.45rem;
 }
 
-#Hero
+#hero
 {
     text-align: center;
     padding-top: 20px;

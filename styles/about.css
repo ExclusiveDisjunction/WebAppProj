@@ -7,13 +7,7 @@
     min-width: 12rem;
 }
 
-h1
-{
-    padding-top: 0px;
-    font-size: 4.0rem;
-}
-
-h2
+.container h2, .card h2
 {
     
     color: #565297;

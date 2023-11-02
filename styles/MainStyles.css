@@ -13,7 +13,6 @@ body
 
     margin: 0;
     font-family: 'Lato' sans-serif;
-    background: -webkit-linear-gradient(35deg, var(--accent1), var(--accent5), var(--accent3));   
     margin-top: 70px;
 }
 
@@ -98,7 +97,6 @@ footer a:hover
     background-color: #565297; /*#294C60;*/
     border-bottom: 3px solid #495057;
     width: 100%;
-    
 }
 .navbar-nav
 {
@@ -139,6 +137,14 @@ footer a:hover
     padding-right: 10px;
 }
 
+#hero
+{
+    background: -webkit-linear-gradient(35deg, var(--accent1), var(--accent5), var(--accent3));   
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
 .CallToAction
 {
     text-align: center;
@@ -163,7 +169,7 @@ footer a:hover
 .SpacedRow
 {
     padding-bottom: 10px;
-    margin: 15px;
+    margin-top: 15px;
     margin-bottom: 10px;
 }
 .MainSectionItem
