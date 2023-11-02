@@ -142,15 +142,15 @@ footer a:hover
 .CallToAction
 {
     text-align: center;
+    display: block;
     border: var(--accent1) 4px solid;
     background: transparent;
     width: auto;
-    display:inline;
+    display: inline-block;
     position: relative;
     font-size: 1.15rem;
     margin: 10px auto auto;
     padding: 15px;
-    vertical-align: middle;
     letter-spacing: 1px;
 }
 .CallToAction:hover
