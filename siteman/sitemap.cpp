@@ -76,7 +76,7 @@ int main()
     {
         time_t CurrentTime = time(nullptr);
         tm CurrentLocalTime = *localtime(&CurrentTime);
-        DateStr = to_string(CurrentLocalTime.tm_year + 1900) + "-" + to_string(CurrentLocalTime.tm_mon + 1) + "-" + to_string(CurrentLocalTime.tm_mday);
+        DateStr = to_string(CurrentLocalTime.tm_year + 1900) + "-" + to_string(CurrentLocalTime.tm_mon + 1) + "-" + string(CurrentLocalTime.tm_mday < 10 ? "0" : "") + to_string(CurrentLocalTime.tm_mday);
     }
 
     ofstream OutFile(SitemapPath);
