@@ -1,3 +1,5 @@
+/* Sectioning */
+
 .sectional
 {
     margin: 25px;
@@ -16,13 +18,30 @@
     min-width: 20rem;
 }
 
+/* Various Styles used by JS or Form */
+
+.red-emphasis
+{
+    color: red;
+}
+.addToCartBttn
+{
+    max-width: 20rem;
+    align-self: center;
+}
+.OrderSelect
+{
+    border: 3px var(--accent4) solid;
+}
+
+/* Command Areas */
+
 #commandsTray
 {
     width: fit-content;
     margin: auto;
     padding: 10px;
 }
-
 #ResetCart, #SubmitCart
 {
     padding: 7px;
@@ -44,21 +63,4 @@
 {
     text-decoration: none;
     background-color: var(--accent4);
-}
-
-.red-emphasis
-{
-    color: red;
-}
-
-.addToCartBttn
-{
-    max-width: 20rem;
-    align-self: center;
-}
-
-/* This is the style that the JS will apply to the card when the item is in the cart.*/
-.OrderSelect
-{
-    border: 3px var(--accent4) solid;
 }

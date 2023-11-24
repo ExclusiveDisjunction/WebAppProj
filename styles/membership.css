@@ -1,68 +1,56 @@
-body
-{
+/* Base */
+
+body {
     width: 100%;
 }
-#FormHost p
-{
+#hero {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Text Formating */
+
+#FormHost p {
     margin: 0px;
     text-shadow: 2px 2px 4px #A093C7;
 
 }
-
-#FormHost h2 
-{
+#FormHost h2 {
     font-size: 3.0rem;
     font-weight: bold;
     text-shadow: 2px 2px 4px #565297;
 }
-
 h3 {
     font-size: 1.45rem;
     padding-top: 20px;
 }
-
 h4 {
     font-size: 1.25rem;
 }
-
-h5 
-{
+h5 {
    font-size: 1.45rem;
 }
 
-#FormHost ul
-{
-    list-style-type: none;
-    padding-left: 0px;
-}
-#FormHost li
-{
-    margin: 10px;
-}
+/* Sectioning */
 
-section
-{
+section {
    display: block;
    align-items: center;
    margin-top: 1rem;
    margin-left: 2px;
 }
 
-input[type="text"], input[type="password"], input[type="tel"], select
-{
+input[type="text"], input[type="password"], input[type="tel"], select {
     width: 100%;
     background-color: white;
     border: 2px solid #E6DAB0;
     color: #495057;
     padding: 3px;
 }
-
-select
-{
+select {
     margin-bottom: 10px;
 }
-input[type="submit"], input[type="reset"]
-{
+input[type="submit"], input[type="reset"] {
     min-width: 40px;
     width: 100%;
     border: 2px solid #E6DAB0;
@@ -72,8 +60,7 @@ input[type="submit"], input[type="reset"]
     margin-top: 10px;
     padding: 5px;
 }
-input.text-center:hover 
-{
+input.text-center:hover {
     background-color: #565297;
     border: 2px solid #D7C69A;
     color: white;
@@ -87,6 +74,8 @@ input[type="radio"] {
     border-radius: 50%;
     padding: 2px;    
 }
+
+/* Form */
 
 #FormData
 {
@@ -108,6 +97,15 @@ input[type="radio"] {
     font-size: 1.25rem;
     text-align: left;
 }
+#FormHost ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+#FormHost li {
+    margin: 10px;
+}
+
+/* Outputs and other Styles */
 
 .errorField
 {
@@ -121,6 +119,7 @@ input[type="radio"] {
 {
     visibility: collapse;
 }
+
 #errorOutput
 {
     border: red solid 3px;
@@ -137,10 +136,4 @@ input[type="radio"] {
 #errorOutput h2
 {
     font-size: 1.45rem;
-}
-
-#hero
-{
-    text-align: center;
-    padding-top: 20px;
 }

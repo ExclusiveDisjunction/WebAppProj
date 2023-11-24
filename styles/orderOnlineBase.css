@@ -1,3 +1,5 @@
+/* Base */
+
 .OrderOnlineCard {
     margin: 10px;
     padding: 20px;
@@ -7,16 +9,13 @@
     border: transparent;
 
 }
-
 .OrderOnlineCard:hover {
     background: #00000020;
 }
-
 .OrderOnlineCard img {
     border: black solid 3px;
     border-radius: 10px;
 }
-
 .OrderOnlineCard input[type="button"] {
     border: var(--accent4) 4px solid;
     border-radius: 5px;
@@ -26,11 +25,12 @@
     color: white;
     background-color: var(--accent5);
 }
-
 .OrderOnlineCard input[type="button"]:hover {
     background: var(--accent4);
     color: white;
 }
+
+/* Images */
 
 .orderImgGrid {
     display: flex;
@@ -39,30 +39,24 @@
     align-self: center;
     margin: auto;
 }
-
 .imgOrderColumn {
     flex: 33%;
     max-width: 33%;
     padding: 0 4px;
 }
-
 .imgOrderColumn img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
 }
-
-/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
-    .column {
+    .imgOrderColumn {
         flex: 50%;
         max-width: 50%;
     }
 }
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    .column {
+    .imgOrderColumn {
         flex: 100%;
         max-width: 100%;
     }

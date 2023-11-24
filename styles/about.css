@@ -1,12 +1,10 @@
-.card
-{
+.card {
     margin: 0px;
     padding: 0px;
     background: #00000000;
     border: 3px solid #00000000;
     min-width: 12rem;
 }
-
 .container h2, .card h2
 {
     
@@ -16,15 +14,13 @@
 
 }
 
-p 
-{
+p {
     font-family: 'Saira Extra Condensed', sans-serif;
     color: #495057;
     font-size: 1.5rem;
 }
 
-div.row
-{
+div.row {
     margin: 40px;
     padding: 0px;
     background: #00000011;
