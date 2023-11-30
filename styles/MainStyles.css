@@ -166,6 +166,8 @@ footer a:hover
     border: var(--accent4) 4px solid;
 }
 
+/* Sectioning */
+
 .SpacedRow
 {
     padding-bottom: 10px;

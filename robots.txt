@@ -3,7 +3,8 @@ Allow: /
 Allow: https://tumblr.com/glitterglides
 Allow: https://independent.academia.edu/GlitterGlides
 Allow: https://www.instagram.com/glitterglides/
-Allow: http://www.glitterglides.com/
+Allow: http://glitterglides.com/blog.html
+Allow: /blog.html
 Disallow: /membership.html
 Disallow: /siteman
 Disallow: /Guides

@@ -1,5 +1,6 @@
-.OrderOnlineCard
-{
+/* Base */
+
+.OrderOnlineCard {
     margin: 10px;
     padding: 20px;
     min-width: 20rem;
@@ -8,17 +9,14 @@
     border: transparent;
 
 }
-.OrderOnlineCard:hover
-{
+.OrderOnlineCard:hover {
     background: #00000020;
 }
-.OrderOnlineCard img
-{
+.OrderOnlineCard img {
     border: black solid 3px;
     border-radius: 10px;
 }
-.OrderOnlineCard input[type="button"]
-{
+.OrderOnlineCard input[type="button"] {
     border: var(--accent4) 4px solid;
     border-radius: 5px;
     padding: 7px;
@@ -27,8 +25,39 @@
     color: white;
     background-color: var(--accent5);
 }
-.OrderOnlineCard input[type="button"]:hover
-{
+.OrderOnlineCard input[type="button"]:hover {
     background: var(--accent4);
     color: white;
+}
+
+/* Images */
+
+.orderImgGrid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    align-self: center;
+    margin: auto;
+}
+.imgOrderColumn {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+.imgOrderColumn img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+@media screen and (max-width: 800px) {
+    .imgOrderColumn {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .imgOrderColumn {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
