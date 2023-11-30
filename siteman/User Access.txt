@@ -1,9 +1,0 @@
-Hannah:
-
-https://060262052651.signin.aws.amazon.com/console
-Username: Hannah
-
-Emilio:
-
-https://060262052651.signin.aws.amazon.com/console
-Username: Emillio
