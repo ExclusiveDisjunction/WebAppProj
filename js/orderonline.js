@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function()
             button.addEventListener("click", function(e)
             {
                 const target = e.target;
-                currentColor = target.innerText.trim().toLowerCase();
+                currentColor = target.innerText.replace(/\s/g,'').toLowerCase();
 
                 let i = 0
                 for (let i = 0; i < ImageBins.length; i++)
