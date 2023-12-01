@@ -5,18 +5,64 @@ document.addEventListener('DOMContentLoaded', function()
     const CartCards = document.querySelectorAll(".card")
     const AddToCartBttns = document.querySelectorAll(".addToCartBttn");
     const ButtonGridDivs = document.querySelectorAll(".ButtonGrid");
-    const SelectButtons = []
+    const SelectButtons = [];
+
+    const ImageBins = [];
+    const ImageTitles = [];
+    let currentColor = "black";
+
+    for (let CartCard of CartCards)
+    {
+        const id = CartCard.id;
+        ImageTitles.push(id);
+
+        const ImageItem = CartCard.querySelector("img")
+        if (ImageItem == null)
+            continue;
+
+        ImageBins.push(ImageItem);
+        const PathStr = `img/shoeImages/${id}/${id}${currentColor}.svg`;
+        console.log(PathStr);
+        ImageItem.src = PathStr;
+    }
+
     for (let Div of ButtonGridDivs)
     {
         const ThisArr = Div.querySelectorAll("button[type='button']");
         SelectButtons.push(ThisArr);
         for (let Button of ThisArr)
         {
-            Button.classList.remove("ButtonSelected");
             Button.addEventListener("click", function(e)
             {
-                e.target.classList.toggle("ButtonSelected");
-            })
+                const target = e.target;
+                for (let child of target.parentElement.children)
+                {
+                    child.classList.remove("ButtonSelected");
+                }
+
+                e.target.classList.add("ButtonSelected");
+            });
+        }
+    }
+
+    const ColorsGrid = document.querySelector("#ColorsGrid");
+    if (ColorsGrid != null)
+    {
+        const buttons = ColorsGrid.querySelectorAll("button");
+        for (let button of buttons)
+        {
+            button.addEventListener("click", function(e)
+            {
+                const target = e.target;
+                currentColor = target.innerText.trim().toLowerCase();
+
+                let i = 0
+                for (let i = 0; i < ImageBins.length; i++)
+                {
+                    const id = ImageTitles[i];
+                    ImageBins[i].src = `img/shoeImages/${id}/${id}${currentColor}.svg`;
+                }
+            });
         }
     }
 
