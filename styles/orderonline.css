@@ -84,6 +84,10 @@ button {
     grid-auto-rows: max-content;
     grid-gap: 5px;
 }
+.ButtonSelected
+{
+    border: var(--accent4) solid 5px;
+}
 
 .active{
     border: none;

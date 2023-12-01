@@ -4,6 +4,21 @@ document.addEventListener('DOMContentLoaded', function()
 
     const CartCards = document.querySelectorAll(".card")
     const AddToCartBttns = document.querySelectorAll(".addToCartBttn");
+    const ButtonGridDivs = document.querySelectorAll(".ButtonGrid");
+    const SelectButtons = []
+    for (let Div of ButtonGridDivs)
+    {
+        const ThisArr = Div.querySelectorAll("button[type='button']");
+        SelectButtons.push(ThisArr);
+        for (let Button of ThisArr)
+        {
+            Button.classList.remove("ButtonSelected");
+            Button.addEventListener("click", function(e)
+            {
+                e.target.classList.toggle("ButtonSelected");
+            })
+        }
+    }
 
     function resetCardStyles()
     {
