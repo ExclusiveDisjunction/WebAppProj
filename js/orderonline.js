@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function()
     {
         removeStorage();
 
-        window.location.href = "http://glitterglides.com/dooped.html";
+        alert("Your order has been placed! Thank you for your patronage!");
     });
 
     // Links the buttons for addtocart to the event that will select all matching cards.

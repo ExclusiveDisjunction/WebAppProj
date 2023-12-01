@@ -65,27 +65,24 @@
     background-color: var(--accent4);
 }
 
-.dot {
-    height: 25px;
-    width: 25px;
-    background-color: red;
-    border-radius: 50%;
-    display: inline-block;
-  }
-
+#FilterSection h3, #FilterSection h4
+{
+    text-align: left;
+    padding-left: 0px;
+    margin-left: 0px;
+}
 button {
     padding: 10px;
+    padding-bottom: 10px;
+    border: black solid 0;
     border-radius: 5px;
 }
-
-.column {
-    float:left;
-    width: 50%;
-}
-
-.btn {
-    padding: 10px;
-    padding-bottom: 10px;
+.ButtonGrid
+{
+    display: grid;
+    grid-template-columns: repeat(4, 5rem);
+    grid-auto-rows: max-content;
+    grid-gap: 5px;
 }
 
 .active{
