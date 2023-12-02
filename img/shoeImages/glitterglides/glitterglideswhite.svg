@@ -134,7 +134,7 @@
        id="image1"
        style="display:none" />
     <rect
-       style="opacity:1;fill:url(#linearGradient12);fill-opacity:1;stroke:none"
+       style="display:none;opacity:1;fill:url(#linearGradient12);fill-opacity:1;stroke:none"
        id="rect11"
        width="878.40002"
        height="454.44498"
