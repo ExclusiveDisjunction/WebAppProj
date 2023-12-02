@@ -7,7 +7,7 @@
    width="560.32001"
    height="809.91998"
    viewBox="0 0 560.32001 809.91998"
-   sodipodi:docname="glitterballerinayellow.svg"
+   sodipodi:docname="glitterballerinablue.svg"
    inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -18,7 +18,7 @@
      id="defs1">
     <pattern
        inkscape:collect="always"
-       xlink:href="#pattern44"
+       xlink:href="#dirty texture"
        preserveAspectRatio="xMidYMid"
        id="pattern1"
        patternTransform="scale(1)"
@@ -104,7 +104,7 @@
        height="200"
        preserveAspectRatio="xMidYMid"
        id="pattern44"
-       style="fill:#8f9325"
+       style="fill:#87bfcf"
        x="0"
        y="0"
        inkscape:stockid="Dirty texture"
@@ -268,7 +268,7 @@
        height="200"
        preserveAspectRatio="xMidYMid"
        id="dirty texture"
-       style="fill:#8f9325"
+       style="fill:#87bfcf"
        x="0"
        y="0"
        inkscape:stockid="Dirty texture"
@@ -301,7 +301,7 @@
      inkscape:deskcolor="#505050"
      inkscape:zoom="1.1297412"
      inkscape:cx="496.57391"
-     inkscape:cy="404.96"
+     inkscape:cy="457.18435"
      inkscape:window-width="1920"
      inkscape:window-height="1171"
      inkscape:window-x="-9"
@@ -320,7 +320,7 @@
        id="image1"
        style="display:none" />
     <rect
-       style="opacity:1;fill:url(#linearGradient57);fill-opacity:1"
+       style="display:none;opacity:1;fill:url(#linearGradient57);fill-opacity:1"
        id="rect56"
        width="562.07562"
        height="809.91998"
