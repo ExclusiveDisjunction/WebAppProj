@@ -7,7 +7,7 @@
    width="1239.36"
    height="1239.36"
    viewBox="0 0 1239.36 1239.36"
-   sodipodi:docname="glitterheels.svg"
+   sodipodi:docname="glitterheelsblack.svg"
    inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -91,11 +91,11 @@
      inkscape:deskcolor="#505050"
      inkscape:zoom="0.52204582"
      inkscape:cx="714.49667"
-     inkscape:cy="759.51188"
-     inkscape:window-width="2256"
-     inkscape:window-height="1398"
-     inkscape:window-x="-11"
-     inkscape:window-y="-11"
+     inkscape:cy="761.42742"
+     inkscape:window-width="1920"
+     inkscape:window-height="1171"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
      inkscape:window-maximized="1"
      inkscape:current-layer="g1" />
   <g
@@ -110,7 +110,7 @@
        id="image1"
        style="display:none" />
     <rect
-       style="opacity:1;fill:url(#linearGradient6);fill-opacity:1"
+       style="display:none;opacity:1;fill:url(#linearGradient6);fill-opacity:1"
        id="rect5"
        width="1243.1859"
        height="1241.2704"

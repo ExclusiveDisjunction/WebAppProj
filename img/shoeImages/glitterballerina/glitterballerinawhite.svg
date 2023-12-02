@@ -320,7 +320,7 @@
        id="image1"
        style="display:none" />
     <rect
-       style="opacity:1;fill:url(#linearGradient57);fill-opacity:1"
+       style="display:none;opacity:1;fill:url(#linearGradient57);fill-opacity:1"
        id="rect56"
        width="562.07562"
        height="809.91998"

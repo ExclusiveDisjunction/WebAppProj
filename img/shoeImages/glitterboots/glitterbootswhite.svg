@@ -90,8 +90,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      inkscape:zoom="1.5813582"
-     inkscape:cx="466.68745"
-     inkscape:cy="406.29632"
+     inkscape:cx="466.68743"
+     inkscape:cy="406.92868"
      inkscape:window-width="1920"
      inkscape:window-height="1171"
      inkscape:window-x="-9"
@@ -110,7 +110,7 @@
        id="image1"
        style="display:none" />
     <rect
-       style="opacity:1;fill:url(#linearGradient6);fill-opacity:1"
+       style="display:none;opacity:1;fill:url(#linearGradient6);fill-opacity:1"
        id="rect5"
        width="1239.208"
        height="593.8656"

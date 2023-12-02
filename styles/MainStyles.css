@@ -3,12 +3,12 @@
 body
 { 
 
-    --background: #ECF0F1;
-    --accent1: #a093c7;
-    --accent2: #c98891;
-    --accent3: #a8d7c2;
-    --accent4: #d7c69a;
-    --accent5: #87bfcf;
+    --background: #ECF0F1; 
+    --accent1: #a093c7; /*lavender*/
+    --accent2: #c98891; /*rose*/
+    --accent3: #a8d7c2; /*sea green*/
+    --accent4: #d7c69a; /*cream*/
+    --accent5: #87bfcf; /*baby blue*/
     --text_color: #000000;
 
     margin: 0;
