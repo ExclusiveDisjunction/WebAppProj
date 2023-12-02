@@ -7,7 +7,7 @@
    width="878.40002"
    height="454.72"
    viewBox="0 0 878.40002 454.72"
-   sodipodi:docname="glitterglidespink.svg"
+   sodipodi:docname="glitterglidesgreen.svg"
    inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -82,7 +82,7 @@
        height="200"
        preserveAspectRatio="xMidYMid"
        id="dirty texture"
-       style="fill:#d1248b"
+       style="fill:#a8d7c2"
        x="0"
        y="0"
        inkscape:stockid="Dirty texture"
@@ -134,7 +134,7 @@
        id="image1"
        style="display:none" />
     <rect
-       style="opacity:1;fill:url(#linearGradient12);fill-opacity:1;stroke:none"
+       style="display:none;opacity:1;fill:url(#linearGradient12);fill-opacity:1;stroke:none"
        id="rect11"
        width="878.40002"
        height="454.44498"
