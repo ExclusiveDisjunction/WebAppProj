@@ -1,70 +1,28 @@
 document.addEventListener('DOMContentLoaded', function()
 {
+    /* Start Cart Handling */
     let cartItems = [];
 
-    const CartCards = document.querySelectorAll(".card")
+    const CartCards = document.querySelectorAll(".card");
     const AddToCartBttns = document.querySelectorAll(".addToCartBttn");
-    const ButtonGridDivs = document.querySelectorAll(".ButtonGrid");
-    const SelectButtons = [];
 
-    const ImageBins = [];
-    const ImageTitles = [];
-    let currentColor = "black";
-
-    for (let CartCard of CartCards)
+    // Updates the sessionStorage for this webpage to the current cart items.
+    function updateStorage()
     {
-        const id = CartCard.id;
-        ImageTitles.push(id);
-
-        const ImageItem = CartCard.querySelector("img")
-        if (ImageItem == null)
-            continue;
-
-        ImageBins.push(ImageItem);
-        const PathStr = `img/shoeImages/${id}/${id}${currentColor}.svg`;
-        console.log(PathStr);
-        ImageItem.src = PathStr;
+        sessionStorage.setItem('cartitems', JSON.stringify(cartItems));
     }
-
-    for (let Div of ButtonGridDivs)
+    // Grabs the sessionStorage data.
+    function retrieveStorage()
     {
-        const ThisArr = Div.querySelectorAll("button[type='button']");
-        SelectButtons.push(ThisArr);
-        for (let Button of ThisArr)
-        {
-            Button.addEventListener("click", function(e)
-            {
-                const target = e.target;
-                for (let child of target.parentElement.children)
-                {
-                    child.classList.remove("ButtonSelected");
-                }
-
-                e.target.classList.add("ButtonSelected");
-            });
-        }
+        return JSON.parse(sessionStorage.getItem('cartitems')) || [];
     }
-
-    const ColorsGrid = document.querySelector("#ColorsGrid");
-    if (ColorsGrid != null)
+    // Clears all data & resets styles.
+    function removeStorage()
     {
-        const buttons = ColorsGrid.querySelectorAll("button");
-        for (let button of buttons)
-        {
-            button.addEventListener("click", function(e)
-            {
-                const target = e.target;
-                currentColor = target.innerText.replace(/\s/g,'').toLowerCase();
-
-                let i = 0
-                for (let i = 0; i < ImageBins.length; i++)
-                {
-                    const id = ImageTitles[i];
-                    ImageBins[i].src = `img/shoeImages/${id}/${id}${currentColor}.svg`;
-                }
-            });
-        }
-    }
+        sessionStorage.removeItem('cartitems');
+        cartItems = [];
+        resetCardStyles();
+    }    
 
     function resetCardStyles()
     {
@@ -135,35 +93,6 @@ document.addEventListener('DOMContentLoaded', function()
         updateStorage();
     }
 
-    // Updates the sessionStorage for this webpage to the current cart items.
-    function updateStorage()
-    {
-        sessionStorage.setItem('cartitems', JSON.stringify(cartItems));
-    }
-    // Grabs the sessionStorage data.
-    function retrieveStorage()
-    {
-        return JSON.parse(sessionStorage.getItem('cartitems')) || [];
-    }
-    // Clears all data & resets styles.
-    function removeStorage()
-    {
-        sessionStorage.removeItem('cartitems');
-        cartItems = [];
-        resetCardStyles();
-    }
-
-    // Links the reset cart button to remove the storage.
-    const ResetCart = document.querySelector("#ResetCart");
-    const SubmitCart = document.querySelector("#SubmitCart");
-    ResetCart.addEventListener("click", removeStorage);
-    SubmitCart.addEventListener("click", function() 
-    {
-        removeStorage();
-
-        alert("Your order has been placed! Thank you for your patronage!");
-    });
-
     // Links the buttons for addtocart to the event that will select all matching cards.
     for (let e of AddToCartBttns)
     {
@@ -176,4 +105,96 @@ document.addEventListener('DOMContentLoaded', function()
     cartItems = retrieveStorage();
     for (let cartItem of cartItems)
         selectAllCardsOfName(cartItem, false);
+
+    /* End Cart Handling */
+    /* Start Color Handling */
+    const ButtonGridDivs = document.querySelectorAll(".ButtonGrid");
+    const SelectButtons = [];
+    const ImageBins = [];
+    const ImageTitles = [];
+    let currentColor = "black";
+
+    for (let CartCard of CartCards)
+    {
+        const id = CartCard.id;
+        ImageTitles.push(id);
+
+        const ImageItem = CartCard.querySelector("img")
+        if (ImageItem == null)
+            continue;
+
+        ImageBins.push(ImageItem);
+        ImageItem.src = `img/shoeImages/${id}/${id}${currentColor}.svg`;
+    }
+
+    for (let Div of ButtonGridDivs)
+    {
+        const ThisArr = Div.querySelectorAll("button[type='button']");
+        SelectButtons.push(ThisArr);
+        for (let Button of ThisArr)
+        {
+            Button.addEventListener("click", function(e)
+            {
+                const target = e.target;
+                for (let child of target.parentElement.children)
+                {
+                    child.classList.remove("ButtonSelected");
+                }
+
+                e.target.classList.add("ButtonSelected");
+            });
+        }
+    }
+
+    const ColorsGrid = document.querySelector("#ColorsGrid");
+    if (ColorsGrid != null)
+    {
+        const buttons = ColorsGrid.querySelectorAll("button");
+        for (let button of buttons)
+        {
+            button.addEventListener("click", function(e)
+            {
+                const target = e.target;
+                currentColor = target.innerText.replace(/\s/g,'').toLowerCase();
+
+                let i = 0
+                for (let i = 0; i < ImageBins.length; i++)
+                {
+                    const id = ImageTitles[i];
+                    ImageBins[i].src = `img/shoeImages/${id}/${id}${currentColor}.svg`;
+                }
+            });
+        }
+    }
+
+    function Camelize(str)
+    {
+        return str.replace(/(?:^\w|[A-Z]|\b\w)/g, function(word, index) {
+            return index === 0 ? word.toLowerCase() : word.toUpperCase();
+          }).replace(/\s+/g, '');
+    }
+
+    // Links the reset cart button to remove the storage.
+    const ResetCart = document.querySelector("#ResetCart");
+    const SubmitCart = document.querySelector("#SubmitCart");
+    ResetCart.addEventListener("click", function()
+    {
+        removeStorage();
+    });
+    SubmitCart.addEventListener("click", function() 
+    {
+        if (cartItems.length == 0)
+            alert("You didnt select anything!");
+        else
+        {
+            let OrderString = "Your order has been placed! You ordered:\n";
+            for (let cartItem of cartItems)
+            {
+                OrderString += `${cartItem}, in ${Camelize(currentColor)}\n`;
+            }
+            OrderString += "Thank you for your patronage!";
+            alert(OrderString);
+            removeStorage();
+        }
+    });
 });
