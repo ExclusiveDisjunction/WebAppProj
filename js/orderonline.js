@@ -184,13 +184,13 @@ document.addEventListener('DOMContentLoaded', function()
     SubmitCart.addEventListener("click", function() 
     {
         if (cartItems.length == 0)
-            alert("You didnt select anything!");
+            alert("You didn't select anything!");
         else
         {
-            let OrderString = "Your order has been placed! You ordered:\n";
+            let OrderString = `Your order has been placed! You ordered, in ${currentColor}:\n`;
             for (let cartItem of cartItems)
             {
-                OrderString += `${cartItem}, in ${Camelize(currentColor)}\n`;
+                OrderString += `${cartItem}\n`;
             }
             OrderString += "Thank you for your patronage!";
             alert(OrderString);
